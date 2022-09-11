@@ -152,7 +152,7 @@ def sent2():
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.write()
-    @st.cache
+    
     st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
     
     st.write('<base target="_blank">', unsafe_allow_html=True)

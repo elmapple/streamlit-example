@@ -133,7 +133,7 @@ def sent1():
     except NameError: # if no queries have been made yet
         pass
 
-def sent2():
+'''def sent2():
     from collections import defaultdict, namedtuple
     from htbuilder import div, big, h2, styles
     from htbuilder.units import rem
@@ -738,11 +738,11 @@ def sent2():
         st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
             .mark_circle(color='#0068c9', opacity=0.5)
             .encode(x='x:Q', y='y:Q'))
-
+'''
 page_names_to_funcs = {
     "—": intro,
     "sent1": sent1,
-    "sent2": sent2
+    #"sent2": sent2
 }
 
 demo_name = st.sidebar.selectbox("Choose a demo", page_names_to_funcs.keys())

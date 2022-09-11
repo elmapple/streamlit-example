@@ -151,7 +151,6 @@ def sent2():
     from urllib.error import URLError
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
-    st.write()
     
     st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
     
@@ -742,8 +741,8 @@ def sent2():
 
 page_names_to_funcs = {
     "—": intro,
-    "Plotting Demo": sent1,
-    "Mapping Demo": sent2
+    "sent1": sent1,
+    "sent2": sent2
 }
 
 demo_name = st.sidebar.selectbox("Choose a demo", page_names_to_funcs.keys())

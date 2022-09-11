@@ -20,7 +20,7 @@ def intro():
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.write(
-    with st.echo(code_location='below'):
+    '''with st.echo(code_location='below'):
         total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
         num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
     
@@ -35,7 +35,7 @@ def intro():
             radius = curr_point_num / total_points
             x = radius * math.cos(angle)
             y = radius * math.sin(angle)
-            data.append(Point(x, y))
+            data.append(Point(x, y))'''
             )
 
 

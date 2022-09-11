@@ -50,7 +50,7 @@ def sent1():
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.write('a')
-     @st.cache
+    @st.cache
 # Set page title
     #st.title('Twitter Sentiment Analysis')
 

@@ -56,7 +56,7 @@ def sent1():
 # Load classification model
     with st.spinner('Loading classification model...'):
         classifier = TextClassifier.load('models/best-model.pt')
-    @st.cache
+    
 # Preprocess function
     allowed_chars = ' AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789~`!@#$%^&*()-=_+[]{}|;:",./<>?'
     punct = '!?,.@#'

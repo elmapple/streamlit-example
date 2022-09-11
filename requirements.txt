@@ -4,3 +4,4 @@ streamlit
 flair
 twitterscraper
 htbuilder
+textblob

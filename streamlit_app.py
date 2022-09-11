@@ -33,15 +33,16 @@ with st.echo(code_location='below'):
         y = radius * math.sin(angle)
         data.append(Point(x, y))
 
-import datetime as dt
-import re
 
-import pandas as pd
-import streamlit as st
-from flair.data import Sentence
-from flair.models import TextClassifier
-from twitterscraper import query_tweets
+
 def sent1():
+    import datetime as dt
+    import re 
+    import pandas as pd
+    import streamlit as st
+    from flair.data import Sentence
+    from flair.models import TextClassifier
+    from twitterscraper import query_tweets
 # Set page title
     st.title('Twitter Sentiment Analysis')
 

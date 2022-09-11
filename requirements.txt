@@ -5,3 +5,4 @@ flair
 twitterscraper
 htbuilder
 textblob
+secrets_beta

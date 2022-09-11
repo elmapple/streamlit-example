@@ -18,7 +18,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 def intro():
     from urllib.error import URLError
 
-    st.markdown(f"# {list(page_names_to_funcs.keys())[0]}")
+    #st.markdown(f"# {list(page_names_to_funcs.keys())[0]}")
     '''with st.echo(code_location='below'):
         total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
         num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
@@ -48,7 +48,7 @@ def sent1():
     from twitterscraper import query_tweets
     from urllib.error import URLError
 
-    st.markdown(f"# {list(page_names_to_funcs.keys())[1]}")
+    #st.markdown(f"# {list(page_names_to_funcs.keys())[1]}")
     
 # Set page title
     #st.title('Twitter Sentiment Analysis')

@@ -49,15 +49,14 @@ def sent1():
     from urllib.error import URLError
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
-    st.write('a')
-    @st.cache
+    
 # Set page title
     #st.title('Twitter Sentiment Analysis')
 
 # Load classification model
     with st.spinner('Loading classification model...'):
         classifier = TextClassifier.load('models/best-model.pt')
-
+    @st.cache
 # Preprocess function
     allowed_chars = ' AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789~`!@#$%^&*()-=_+[]{}|;:",./<>?'
     punct = '!?,.@#'

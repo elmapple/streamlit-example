@@ -19,7 +19,6 @@ def intro():
     from urllib.error import URLError
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
-    st.write(
     '''with st.echo(code_location='below'):
         total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
         num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
@@ -36,7 +35,7 @@ def intro():
             x = radius * math.cos(angle)
             y = radius * math.sin(angle)
             data.append(Point(x, y))'''
-            )
+
 
 
 def sent1():
@@ -50,7 +49,8 @@ def sent1():
     from urllib.error import URLError
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
-    st.write(
+    st.write('a')
+     @st.cache
 # Set page title
     #st.title('Twitter Sentiment Analysis')
 
@@ -133,7 +133,7 @@ def sent1():
             st.write('All postive tweets')
     except NameError: # if no queries have been made yet
         pass
-    )
+
 def sent2():
     from collections import defaultdict, namedtuple
     from htbuilder import div, big, h2, styles
@@ -152,8 +152,8 @@ def sent2():
     from urllib.error import URLError
 
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
-    st.write(
-    
+    st.write()
+    @st.cache
     st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
     
     st.write('<base target="_blank">', unsafe_allow_html=True)
@@ -740,7 +740,7 @@ def sent2():
         st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
             .mark_circle(color='#0068c9', opacity=0.5)
             .encode(x='x:Q', y='y:Q'))
-    )
+
 page_names_to_funcs = {
     "—": intro,
     "Plotting Demo": sent1,
